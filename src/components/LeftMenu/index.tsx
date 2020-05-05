@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import LogoPechinxai from '../../assets/logo.svg';
@@ -11,12 +12,12 @@ const LeftMenu: React.FC = () => (
 
     <Navigation>
       {/* replace a for link react-router-dom  */}
-      <a href="/merchant">Página Inicial</a>
-      <a href="/profile">Editar perfil</a>
-      <a href="#">Pedidos</a>
-      <a href="#">Produtos</a>
-      <a href="/suppliers">Fonercedores parceiros</a>
-      <a href="/auth">Sair</a>
+      <Link to="/merchant">Página Inicial</Link>
+      <Link to="/profile">Editar perfil</Link>
+      <Link to="#">Pedidos</Link>
+      <Link to="#">Produtos</Link>
+      <Link to="/suppliers">Fonercedores parceiros</Link>
+      <Link to="/auth">Sair</Link>
 
     </Navigation>
   </Container>

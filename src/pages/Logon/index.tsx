@@ -1,5 +1,7 @@
 import React, { useCallback, useRef } from 'react';
 
+import { Link  } from 'react-router-dom';
+
 import { Container, Content, Logo, Formulario, ApoiadoresText, ApoiadoresImg} from './styles';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
@@ -66,8 +68,7 @@ const Logon: React.FC = () => {
             <Form ref={formRef} onSubmit={handleSubmit}>
               <Input name="email" placeholder="Digite Seu E-mail" type="text"/>
               <Input name="password" placeholder="Digite Sua Senha" type="password"/>
-              <a href = "/merchant"> Logar</a>
-              {/* <Button type="submit" >Logar</Button> */}
+              <Link to="/merchant">Logar</Link>
             </Form>
         </Formulario>
             
