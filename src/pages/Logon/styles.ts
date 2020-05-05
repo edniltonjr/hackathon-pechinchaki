@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import BackGroundLogin from '../../assets/background-login.png';
 import { shade } from 'polished';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100vw;
@@ -36,6 +37,30 @@ export const Formulario = styled.form`
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+
+  a {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    background: #445cae;
+    margin: 0 auto;
+
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 16px;
+    border: 0;
+    transition: background-color 0.2s;
+    padding: 10px 20px;
+    &:hover {
+    background: ${shade(0.2, '#445CAE')};
+  }
+
+  }
+
+
   img {
     align-items: center;
     justify-content: center;
@@ -71,26 +96,5 @@ export const ApoiadoresImg = styled.div`
   justify-content: center;
   img {
     justify-content: center;
-  }
-`;
-
-export const A = styled.a`
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 150px;
-  background: #445cae;
-  margin: 0 auto;
-
-  margin-top: 60px;
-  font-weight: bold;
-  font-size: 14px;
-  color: #fff;
-  border-radius: 16px;
-  border: 0;
-  transition: background-color 0.2s;
-  padding: 10px 20px;
-  &:hover {
-    background: ${shade(0.2, '#445CAE')};
   }
 `;

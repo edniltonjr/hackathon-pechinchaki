@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { Container, Content } from './styles';
 
@@ -19,7 +18,7 @@ const Header: React.FC = () => {
               <a href="#como-somos">Quem Somos</a>
             </li>
             <li>
-              <Link to="/auth">Area do Lojista</Link>
+              <a href="/auth">Area do Lojista</a>
             </li>
           </ul>
         </nav>
